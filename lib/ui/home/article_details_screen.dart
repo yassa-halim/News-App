@@ -32,7 +32,7 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
       context: context,
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
-      barrierColor: Colors.black.withOpacity(0.5),
+      barrierColor: Colors.black.withAlpha(128),
       builder: (context) => Container(
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
@@ -66,7 +66,7 @@ class _ArticleDetailsScreenState extends State<ArticleDetailsScreen> {
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                     fontSize: 16,
                     height: 1.6,
-                    color: Theme.of(context).colorScheme.onSurface.withOpacity(0.8),
+                    color: Theme.of(context).colorScheme.onSurface.withAlpha(204),
                   ),
             ),
             const SizedBox(height: 32),

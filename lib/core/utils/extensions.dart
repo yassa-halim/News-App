@@ -20,17 +20,17 @@ extension WhiteSpace on num {
 
 extension PaddingExtension on Widget {
   Padding withHorizontalPadding(double padding) => Padding(
-    padding: .symmetric(horizontal: padding),
+    padding: EdgeInsets.symmetric(horizontal: padding),
     child: this,
   );
 
   Padding withVerticalPadding(double padding) => Padding(
-    padding: .symmetric(vertical: padding),
+    padding: EdgeInsets.symmetric(vertical: padding),
     child: this,
   );
 
   Padding withPadding(double padding) =>
-      Padding(padding: .all(padding), child: this);
+      Padding(padding: EdgeInsets.all(padding), child: this);
 }
 
 extension StringExtension on String {
